@@ -7,8 +7,8 @@ public class StudentAppListVariables {
     protected String studentUniID;
     protected String studentCourse ="" ;
     protected int tuitionBalance;
-    protected final static int costOfCourse = 600;
-    protected final static int iD = 1000;
+    protected  static int costOfCourse = 600;
+    protected  static int iD = 1000;
     protected int count = 0;
 
     public static int getCostOfCourse() {
