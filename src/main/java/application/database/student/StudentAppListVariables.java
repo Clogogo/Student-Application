@@ -1,22 +1,23 @@
-package StudentDatabaseApplication;
+package application.database.student;
 
 public class StudentAppListVariables {
-    protected String firstName;
-    protected String lastName;
-    protected int studentGradeYr;
-    protected String studentUniID;
-    protected String studentCourse ="" ;
-    protected int tuitionBalance;
-    protected  static int costOfCourse = 600;
-    protected  static int iD = 1000;
-    protected int count = 0;
+    private static String firstName;
+    private String lastName;
+    private int studentGradeYr;
+    private String studentUniID;
+    private String studentCourse;
+    private int tuitionBalance;
+    private int totalCost = 0;
+    private static int costOfCourse = 600;
+    private static int iD = 1000;
+    private int count;
 
-    public static int getCostOfCourse() {
+    public  int getCostOfCourse() {
         return costOfCourse;
     }
 
-    public static void setCostOfCourse(int costOfCourse) {
-        StudentAppListVariables.costOfCourse = costOfCourse;
+    public  void setCostOfCourse(int costOfCourse) {
+        this.costOfCourse = costOfCourse;
     }
 
     public static int getiD() {
@@ -27,12 +28,20 @@ public class StudentAppListVariables {
         StudentAppListVariables.iD = iD;
     }
 
-    public String getFirstName() {
+    public static String getFirstName() {
         return firstName;
     }
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
+    }
+
+    public int getTotalCost() {
+        return totalCost;
+    }
+
+    public void setTotalCost(int totalCost) {
+        this.totalCost = totalCost;
     }
 
     public String getLastName() {
